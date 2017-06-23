@@ -2,7 +2,9 @@
   <div id="app" class="site grid">
     <site-header></site-header>
       <main id="main" class="site-main" role="main">
-          <router-view></router-view>
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
       </main><!-- .site-main -->
     <site-footer></site-footer>
   </div>

@@ -1,0 +1,32 @@
+.post {
+  .entry-content {
+    line-height: 2em;
+    p {
+      margin: 1em 0;
+      font-size: 18px;
+    }
+    a {
+      color: $color--primary;
+      border-bottom: 2px dotted #ccc;
+      transition: all .2s ease-in-out;
+      &:after {
+        margin-left: 5px;
+      }
+      &:hover {
+        background-color: $color--primary;
+        color: #000000;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 1em 0;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -2,7 +2,7 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="container inner">
             <div id="logo" class="site-header__logo">
-                <a href="#">Thien's Notes</a>
+                <router-link :to="{ name: 'home' }">Thien's Notes</router-link>
             </div><!-- #logo -->
 
             <div id="submenu" class="site-header__submenu">

@@ -1,10 +1,10 @@
 <template>
     <article class="post">
         <h2 class="entry-title">
-            <a href="#" v-text="post.title"></a>
+            <router-link :to="{ name: 'post', params: { id: post.sys.id }}" v-text="post.fields.title"></router-link>
         </h2>
         <div class="entry-meta">
-            <time v-text="post.date"></time>
+            <time v-text="post.fields.publishDate"></time>
         </div>
     </article><!-- .post -->
 </template>
