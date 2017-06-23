@@ -1,5 +1,5 @@
 <template>
-    <div class="posts site-main__posts-list">
+    <div class="posts">
         <post-item v-for="(post, index) in posts" :key="index" :post="post"></post-item>
     </div>
 </template>

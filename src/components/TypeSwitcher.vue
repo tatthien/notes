@@ -1,19 +1,7 @@
 <template>
     <nav id="switch-type" class="site-main__switcher">
-        <a href="#"
-           id="blog"
-           title="Blog Posts"
-           :class="{ active: type === 'blog' }"
-           @click.prevent="change('blog')"
-        >Blog
-        </a>
-        <a href="#"
-           id="til"
-           title="Today I Learned"
-           :class="{ active: type === 'til' }"
-           @click.prevent="change('til')"
-        >TIL;
-        </a>
+        <router-link :to="{ name: 'home' }" exact>Blog</router-link>
+        <router-link :to="{ name: 'til' }" exact>TIL</router-link>
     </nav><!-- end #switch-type -->
 </template>
 
@@ -47,7 +35,7 @@
             &:hover {
                 color: $color--primary-hover;
             }
-            &.active {
+            &.router-link-active {
                 background-color: $color--primary;
                 color: #fff;
                 cursor: default;
