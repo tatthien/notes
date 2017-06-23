@@ -8,7 +8,6 @@
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
                     <a href="#">About</a>
-                    <a href="#">Contact</a>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
