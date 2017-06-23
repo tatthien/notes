@@ -1,0 +1,19 @@
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, $content-width) 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+#masthead,
+#colophon {
+  grid-column: span 3;
+}
+
+#main {
+  grid-column: 2/3;
+}
