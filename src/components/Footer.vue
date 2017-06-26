@@ -1,8 +1,11 @@
 <template>
     <footer id="colophon" class="site-footer" role="contentinfo">
-        <div id="copyright">
-            <p>© 2017 Thien Nguyen</p>
-        </div><!-- #copyright -->
+        <div class="container">
+            <div id="copyright">
+                <p>The official blog of <a href="#" class="link">Thien Nguyen</a>. Made with <a href="#" class="link">Vue.js</a> and <a
+                        href="#" class="link">Contentful</a></p>
+            </div><!-- #copyright -->
+        </div>
     </footer><!-- .site-footer -->
 </template>
 
@@ -10,9 +13,9 @@
   export default {}
 </script>
 
-<style lang="scss" scoped="">
+<style lang="scss" scoped>
     .site-footer {
-        text-align: center;
+        color: #a9a9a9;
         padding: 50px 0;
     }
 </style>

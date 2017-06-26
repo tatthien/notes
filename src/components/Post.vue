@@ -49,13 +49,6 @@
     @import "./../assets/scss/global/variables";
 
     .single {
-        .entry-title {
-            font-size: 2em;
-            text-align: center;
-        }
-        .entry-meta {
-            text-align: center;
-        }
         .entry-content {
             margin-top: 50px;
         }
@@ -63,7 +56,7 @@
 
     /* Transition */
     .fade-enter-active, .fade-leave-active {
-        transition: opacity .3s
+        transition: opacity .2s ease-in-out;
     }
     .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
         opacity: 0

@@ -1,21 +1,15 @@
 .post {
+  .entry-title {
+    font-size: 2.5em;
+  }
+  .entry-meta {
+    font-size: 14px;
+  }
   .entry-content {
     line-height: 2em;
     p {
       margin: 1em 0;
       font-size: 18px;
-    }
-    a {
-      color: $color--primary;
-      border-bottom: 2px dotted #ccc;
-      transition: all .2s ease-in-out;
-      &:after {
-        margin-left: 5px;
-      }
-      &:hover {
-        background-color: $color--primary;
-        color: #000000;
-      }
     }
     h1,
     h2,
@@ -27,6 +21,9 @@
     }
     h2 {
       font-size: 1.5em;
+    }
+    a {
+      @extend .link;
     }
   }
 }

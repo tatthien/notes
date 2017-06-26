@@ -22,7 +22,6 @@
     @import "./../assets/scss/global/variables";
 
     .site-header {
-        box-shadow: 0 3px 4px rgba(0,0,0,.05);
         padding: 15px 0;
         background-color: #000000;
         .inner {

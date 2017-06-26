@@ -1,6 +1,6 @@
 <template>
     <div class="tils">
-        <til-item v-for="(til, index) in tils" :til="til"></til-item>
+        <til-item v-for="(til, index) in tils" :key="index" :til="til"></til-item>
     </div>
 </template>
 

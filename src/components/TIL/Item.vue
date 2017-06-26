@@ -1,7 +1,7 @@
 <template>
-    <article class="til">
-        <h2 class="entry-meta">
-            <time v-text="til.date"></time>
+    <article class="til post">
+        <h2 class="entry-title">
+            <time>{{ til.date }}</time>
         </h2>
         <div class="entry-content" v-html="til.content"></div>
     </article>

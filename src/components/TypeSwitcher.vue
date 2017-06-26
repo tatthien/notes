@@ -1,6 +1,6 @@
 <template>
     <nav id="switch-type" class="site-main__switcher">
-        <router-link :to="{ name: 'home' }" exact>Blog</router-link>
+        <router-link :to="{ name: 'home' }" exact>Home</router-link>
         <router-link :to="{ name: 'til' }" exact>TIL</router-link>
     </nav><!-- end #switch-type -->
 </template>

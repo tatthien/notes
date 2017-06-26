@@ -1,12 +1,10 @@
 <template>
-    <transition name="slide">
-        <div class="posts">
-            <post-item v-for="(post, index) in posts" :key="index" :post="post"></post-item>
-            <div class="loadmore" v-if="isLoadmore">
-                <a href="#" @click.prevent="loadMore">Load more</a>
-            </div>
+    <div class="posts" v-if="posts">
+        <post-item v-for="(post, index) in posts" :key="index" :post="post"></post-item>
+        <div class="loadmore" v-if="isLoadmore">
+            <a href="#" @click.prevent="loadMore">Load more</a>
         </div>
-    </transition>
+    </div>
 </template>
 
 <script>
