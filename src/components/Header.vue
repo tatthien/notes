@@ -7,7 +7,7 @@
 
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
-                    <a href="#">About</a>
+                    <router-link :to="{ name: 'about' }">about.this.site</router-link>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
@@ -24,6 +24,10 @@
     .site-header {
         padding: 15px 0;
         background-color: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         .inner {
             display: flex;
             justify-content: space-between;

@@ -5,7 +5,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, $content-width) 1fr;
+  grid-template-columns: 1fr $content-width 1fr;
   grid-template-rows: auto auto auto;
 }
 #masthead,
@@ -18,6 +18,9 @@
 }
 
 @media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 100% 1fr;
+  }
   .container,
   #main {
     padding-left: 2em;

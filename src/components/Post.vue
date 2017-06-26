@@ -2,12 +2,12 @@
     <transition name="fade">
     <div class="single" v-if="this.post">
         <article class="post">
+            <div class="entry-meta">
+                <time>{{ post.fields.publishDate | formatDate }}</time>
+            </div>
             <header class="entry-header">
                 <h1 class="entry-title" v-text="post.fields.title"></h1>
             </header>
-            <div class="entry-meta">
-                <time v-text="post.fields.publishDate"></time>
-            </div>
             <div class="entry-content" v-html="markedBody"></div>
         </article>
     </div>
@@ -46,14 +46,6 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "./../assets/scss/global/variables";
-
-    .single {
-        .entry-content {
-            margin-top: 50px;
-        }
-    }
-
     /* Transition */
     .fade-enter-active, .fade-leave-active {
         transition: opacity .2s ease-in-out;

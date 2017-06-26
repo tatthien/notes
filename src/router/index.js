@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home.vue'
 import TIL from '@/components/TIL.vue'
 import Post from '@/components/Post.vue'
+import About from '@/components/About.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/post/:id',
       name: 'post',
       component: Post
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     }
   ]
 })

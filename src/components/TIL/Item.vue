@@ -14,18 +14,4 @@
 </script>
 
 <style lang="scss" scoped>
-    @import './../../assets/scss/global/variables';
-
-    .til {
-        margin: 20px 0;
-        padding: 20px 0;
-        border-bottom: 1px solid #efefef;
-        .entry-meta {
-            color: #000;
-            font-size: 2em;
-        }
-        .entry-content {
-            margin-top: 20px;
-        }
-    }
 </style>

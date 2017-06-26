@@ -1,8 +1,8 @@
 <template>
     <div class="posts" v-if="posts">
         <post-item v-for="(post, index) in posts" :key="index" :post="post"></post-item>
-        <div class="loadmore" v-if="isLoadmore">
-            <a href="#" @click.prevent="loadMore">Load more</a>
+        <div class="loadmore" v-if="hasLoadMore">
+            <a href="#" @click.prevent="loadMore" v-text="loadMoreText"></a>
         </div>
     </div>
 </template>
@@ -15,6 +15,7 @@
     },
     data () {
       return {
+        isLoadMore: false,
         limit: 10,
         skip: 0
       }
@@ -26,8 +27,11 @@
       totalPosts () {
         return this.$store.getters.totalPosts
       },
-      isLoadmore () {
+      hasLoadMore () {
         return this.posts.length < this.totalPosts
+      },
+      loadMoreText () {
+        return this.isLoadMore ? 'Loading...' : 'Load more'
       }
     },
     created () {
@@ -35,9 +39,13 @@
     },
     methods: {
       getItems () {
+        if (this.isLoadMore) return false
+        this.isLoadMore = true
         this.$store.dispatch('getPosts', {
           limit: this.limit,
           skip: this.skip
+        }).then(() => {
+          this.isLoadMore = false
         })
       },
       loadMore () {
