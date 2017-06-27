@@ -9,6 +9,9 @@
                 <h1 class="entry-title" v-text="post.fields.title"></h1>
             </header>
             <div class="entry-content" v-html="markedBody"></div>
+            <div class="entry-comment">
+                <vue-disqus shortname="blogtatthien" :identifier="this.id" :url="this.url"></vue-disqus>
+            </div>
         </article>
     </div>
     </transition>
@@ -16,7 +19,11 @@
 
 <script>
   import marked from 'marked'
+  import VueDisqus from 'vue-disqus/VueDisqus.vue'
   export default {
+    components: {
+      VueDisqus
+    },
     data () {
       return {}
     },
@@ -28,6 +35,9 @@
         let post = this.$store.getters.posts.filter(post => post.sys.id === this.id)
         if (post.length === 0) { return false }
         return post[0]
+      },
+      url () {
+        return window.location.hostname + this.$route.path
       },
       markedBody () {
         return marked(this.post.fields.body)
@@ -46,6 +56,9 @@
 </script>
 
 <style lang="scss" scoped>
+    .entry-comment {
+        margin-top: 50px;
+    }
     /* Transition */
     .fade-enter-active, .fade-leave-active {
         transition: opacity .2s ease-in-out;
