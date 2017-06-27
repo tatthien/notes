@@ -1,0 +1,10 @@
+.loadmore {
+  margin-top: 30px;
+  text-align: center;
+  a {
+    font-size: 18px;
+    color: $color--primary;
+    @extend .link;
+    border-bottom: none;
+  }
+}

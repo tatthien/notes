@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,12 @@
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
   </head>
   <body>
-    <div id="app">This is your fallback content in case JavaScript fails to load.</div>
+    <noscript>
+      <!-- anchor linking to external file -->
+      <a href="https://tatthien.com" target="_blank">tatthiendotcom</a>
+    </noscript>
+
+    <div id="app"></div>
     <!-- Todo: only include in production -->
     <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
     <!-- built files will be auto injected -->

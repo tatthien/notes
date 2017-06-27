@@ -37,7 +37,7 @@
         return post[0]
       },
       url () {
-        return window.location.hostname + this.$route.path
+        return window.location.href
       },
       markedBody () {
         return marked(this.post.fields.body)

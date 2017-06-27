@@ -57,17 +57,4 @@
 </script>
 
 <style lang="scss" scoped>
-    @import './../../assets/scss/global/variables';
-
-    .loadmore {
-        margin-top: 30px;
-        text-align: center;
-        a {
-            font-size: 18px;
-            color: $color--primary;
-            &:hover {
-                color: $color--primary-hover
-            }
-        }
-    }
 </style>
