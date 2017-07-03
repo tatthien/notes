@@ -2,14 +2,18 @@
     <transition name="fade">
     <div class="single" v-if="this.post">
         <article class="post">
-            <div class="entry-meta">
-                <time>{{ post.fields.publishDate | formatDate }}</time>
-            </div>
             <header class="entry-header">
                 <h1 class="entry-title" v-text="post.fields.title"></h1>
             </header>
+
+            <div class="entry-meta">
+                <time>{{ post.fields.publishDate | formatDate }}</time>
+            </div>
+
             <div class="entry-content" v-html="markedBody"></div>
+
             <div class="entry-comment">
+                <h2>Comments</h2>
                 <vue-disqus shortname="blogtatthien" :identifier="this.id" :url="this.url"></vue-disqus>
             </div>
         </article>
@@ -58,6 +62,9 @@
 <style lang="scss" scoped>
     .entry-comment {
         margin-top: 50px;
+        h2 {
+            font-size: 1.5em;
+        }
     }
     /* Transition */
     .fade-enter-active, .fade-leave-active {

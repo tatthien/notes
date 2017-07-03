@@ -7,7 +7,7 @@
 
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
-                    <router-link :to="{ name: 'about' }">about.this.site</router-link>
+                    <router-link :to="{ name: 'about' }">About</router-link>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
