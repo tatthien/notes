@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "~nprogress/nprogress.css";
   @import "assets/scss/main.scss";
   #main {
       margin-top: 95px;

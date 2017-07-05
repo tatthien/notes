@@ -12,7 +12,6 @@ const actions = {
     }, payload)
 
     cdaClient.getEntries(params).then((entries) => {
-      console.log(entries.items)
       commit('GET_TILS', entries.items)
       commit('GET_TOTAL_TILS', entries.total)
     })
