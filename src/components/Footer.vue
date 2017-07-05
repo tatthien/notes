@@ -2,8 +2,8 @@
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
             <div id="copyright">
-                <p>The official blog of <a href="#" class="link">Thien Nguyen</a>. Made with <a href="#" class="link">Vue.js</a> and <a
-                        href="#" class="link">Contentful</a></p>
+                <p>© 2017 Thien Nguyen. Made with <a href="https://vuejs.org" target="_blank" class="link">Vue.js</a> and <a
+                        href="https://www.contentful.com/" target="_blank" class="link">Contentful</a></p>
             </div><!-- #copyright -->
         </div>
     </footer><!-- .site-footer -->
