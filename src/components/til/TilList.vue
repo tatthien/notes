@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import TilItem from './Item.vue'
+  import TilItem from './TilItem.vue'
   export default {
     components: {
       TilItem
@@ -56,5 +56,3 @@
   }
 </script>
 
-<style lang="scss" scoped>
-</style>

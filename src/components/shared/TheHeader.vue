@@ -7,7 +7,8 @@
 
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
-                    <router-link :to="{ name: 'about' }">About</router-link>
+                    <a href="https://github.com/tatthien">#github</a>
+                    <a href="https://twitter.com/tat_thien">@tat_thien</a>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
@@ -19,15 +20,14 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "./../assets/scss/global/variables";
-
     .site-header {
         padding: 15px 0;
-        background-color: #000000;
+        background-color: $color--primary;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+        font-size: 18px;
         .inner {
             display: flex;
             justify-content: space-between;

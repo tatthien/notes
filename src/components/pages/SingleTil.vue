@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import TypeSwitcher from './TypeSwitcher.vue'
-  import TilList from './TIL/List.vue'
+  import TypeSwitcher from '@/components/TypeSwitcher.vue'
+  import TilList from '@/components/til/TilList.vue'
   export default {
     components: {
       TypeSwitcher,
@@ -16,6 +16,3 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
-</style>

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import PostItem from './Item.vue'
+  import PostItem from './PostItem.vue'
   export default {
     components: {
       PostItem

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:400,400i,700,700i&subset=latin-ext,vietnamese');
-
-$font-family--body: 'Roboto', sans-serif;
-$font-family--heading: 'Roboto Slab', cursive;
+$font-family--body: 'Inconsolata', monospace;
+$font-family--heading: 'Inconsolata', monospace;
 $font--size: 16px;
-$color--primary: #1db954;
-$color--primary-hover: #1ed760;
-$color--dark: #2c2c2c;
-$color--grey: #a9a9a9;
+$color--primary: #FF6600;
+$color--primary-hover: #FF6600;
+$color--dark: #323648;
+$color--grey: #6D6F7B;
+$color--grey-light: #efefef;
 $content-width: 800px;

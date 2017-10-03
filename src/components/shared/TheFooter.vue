@@ -17,5 +17,8 @@
     .site-footer {
         color: #a9a9a9;
         padding: 50px 0;
+        @media (max-width: 414px) {
+            padding: 25px 0;
+        }
     }
 </style>

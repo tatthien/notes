@@ -64,6 +64,7 @@
         margin-top: 50px;
         h2 {
             font-size: 1.5em;
+            font-weight: 700;
         }
     }
     /* Transition */

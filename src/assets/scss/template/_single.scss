@@ -1,9 +1,9 @@
 .single {
-  .entry-title,
-  .entry-meta {
-    text-align: center;
-  }
   .entry-content {
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+  .entry-meta {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color--grey-light;
   }
 }

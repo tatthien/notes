@@ -1,32 +1,27 @@
 <template>
   <div id="app" class="site grid">
-    <site-header></site-header>
+    <the-header></the-header>
       <main id="main" class="site-main" role="main">
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
       </main><!-- .site-main -->
-    <site-footer></site-footer>
+    <the-footer></the-footer>
   </div>
 </template>
 
 <script>
-import SiteHeader from './components/Header.vue'
-import SiteFooter from './components/Footer.vue'
+import TheHeader from '@/components/shared/TheHeader.vue'
+import TheFooter from '@/components/shared/TheFooter.vue'
 export default {
   name: 'app',
   components: {
-    SiteHeader,
-    SiteFooter
+    TheHeader,
+    TheFooter
   }
 }
 </script>
 
 <style lang="scss">
-  @import "~nprogress/nprogress.css";
   @import "assets/scss/main.scss";
-  #main {
-      margin-top: 95px;
-      margin-bottom: 40px;
-  }
 </style>

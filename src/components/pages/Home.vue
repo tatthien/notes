@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import TypeSwitcher from './TypeSwitcher.vue'
-  import PostList from './Posts/List.vue'
+  import TypeSwitcher from '@/components/TypeSwitcher.vue'
+  import PostList from '@/components/post/PostList.vue'
   export default {
     components: {
       TypeSwitcher,
@@ -16,6 +16,3 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
