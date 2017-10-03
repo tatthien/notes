@@ -20,7 +20,9 @@
 </script>
 
 <style lang="scss" scoped>
-    .entry-content {
-        margin-top: 20px;
+    .til {
+        .entry-content {
+            margin-top: 20px;
+        }
     }
 </style>

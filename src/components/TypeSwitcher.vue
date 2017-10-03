@@ -30,8 +30,7 @@
             padding: 5px 0;
             margin-right: 10px;
             display: inline-block;
-            &:hover,
-            &.til {
+            &:hover {
                 color: $color--primary-hover;
             }
             &.router-link-active {

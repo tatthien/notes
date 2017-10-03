@@ -28,6 +28,7 @@
         left: 0;
         right: 0;
         font-size: 18px;
+        z-index: 99999;
         .inner {
             display: flex;
             justify-content: space-between;
