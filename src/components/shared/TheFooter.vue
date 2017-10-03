@@ -2,8 +2,7 @@
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
             <div id="copyright">
-                <p>© 2017 Thien Nguyen. Made with <a href="https://vuejs.org" target="_blank" class="link">Vue.js</a> and <a
-                        href="https://www.contentful.com/" target="_blank" class="link">Contentful</a></p>
+                <p>© 2017 Thien Nguyen. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" class="link">CC BY-NC-ND 4.0</a></p>
             </div><!-- #copyright -->
         </div>
     </footer><!-- .site-footer -->
@@ -15,7 +14,7 @@
 
 <style lang="scss" scoped>
     .site-footer {
-        color: #a9a9a9;
+        color: $color--grey;
         padding: 50px 0;
         @media (max-width: 414px) {
             padding: 25px 0;

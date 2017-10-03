@@ -41,8 +41,10 @@
       word-break: break-all;
     }
     img {
+      display: block;
       max-width: 100%;
       height: auto;
+      margin: 0 auto;
     }
     pre,
     code {
@@ -65,6 +67,10 @@
     ul,
     ol {
       padding-left: 20px;
+      li {
+        font-size: 18px;
+        @include line-height(18);
+      }
     }
     ul {
       list-style: disc;

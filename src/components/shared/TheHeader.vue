@@ -7,8 +7,8 @@
 
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
-                    <a href="https://github.com/tatthien">#github</a>
-                    <a href="https://twitter.com/tat_thien">@tat_thien</a>
+                    <a href="https://github.com/tatthien" target="_blank">#github</a>
+                    <a href="https://twitter.com/tat_thien" target="_blank">@tat_thien</a>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
