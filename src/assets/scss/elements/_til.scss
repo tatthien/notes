@@ -1,18 +1,4 @@
 .post.til {
   .entry-content {
-    ul {
-      list-style: none;
-      padding-left: 0;
-      li {
-        position: relative;
-        padding-left: 20px;
-      }
-      li:after {
-        content: '-';
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
   }
 }
