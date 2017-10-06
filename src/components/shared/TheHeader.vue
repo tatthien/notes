@@ -2,7 +2,7 @@
     <header id="masthead" class="site-header" role="banner">
         <div class="container inner">
             <div id="logo" class="site-header__logo">
-                <router-link :to="{ name: 'home' }">Thien's Notes</router-link>
+                <router-link :to="{ name: 'home' }">hien's Notes</router-link>
             </div><!-- #logo -->
 
             <div id="submenu" class="site-header__submenu">
@@ -22,13 +22,14 @@
 <style lang="scss" scoped>
     .site-header {
         padding: 15px 0;
-        background-color: $color--primary;
+        background-color: #fff;
+        box-shadow: 0 2px 3px rgba(0,0,0,.1);
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         font-size: 18px;
-        z-index: 99999;
+        z-index: 99;
         .inner {
             display: flex;
             justify-content: space-between;
@@ -36,15 +37,22 @@
         &__logo {
             a {
                 font-family: $font-family--heading;
-                color: #ffffff;
+                color: $color--dark;
+                &:before {
+                    content: 'T';
+                    background: $color--primary;
+                    font-weight: 700;
+                    padding: 0 5px;
+                }
             }
         }
         &__submenu {
             a {
-                color: #ffffff;
+               
                 font-weight: 700;
                 display: inline-block;
                 margin-left: 15px;
+                color: $color--primary;
             }
         }
     }

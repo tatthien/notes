@@ -11,9 +11,12 @@ const actions = {
       order: '-sys.createdAt'
     }, payload)
 
-    cdaClient.getEntries(params).then((entries) => {
-      commit('GET_TILS', entries.items)
-      commit('GET_TOTAL_TILS', entries.total)
+    return new Promise((resolve) => {
+      cdaClient.getEntries(params).then((entries) => {
+        commit('GET_TILS', entries.items)
+        commit('GET_TOTAL_TILS', entries.total)
+        resolve()
+      })
     })
   }
 }
