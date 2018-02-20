@@ -1,9 +1,8 @@
 {
-  "name": "my-blog",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "The official blog of Thien Nguyen",
   "author": "Thien Nguyen <tatthien.contact@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
