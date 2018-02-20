@@ -21,8 +21,8 @@
     line-height: 2em;
     p {
       margin: 1em 0;
-      font-size: 18px;
-      @include line-height(18);
+      font-size: 21px;
+      @include line-height(21);
     }
     h1,
     h2,
@@ -47,16 +47,18 @@
       margin: 0 auto;
     }
     code {
-      background-color: $color--dark;
-      color: #fff;
-      padding: 3px 10px;
+      background-color: rgba($color--dark, .2);
+      padding: 3px 5px;
     }
     pre {
       overflow-x: auto;
       padding: 10px;
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 21px;
+      @include line-height(21);
       background-color: $color--dark;
+      code {
+        background-color: transparent;
+      }
     }
     strong {
       font-weight: 700;
@@ -68,8 +70,8 @@
     ol {
       padding-left: 20px;
       li {
-        font-size: 18px;
-        @include line-height(18);
+        font-size: 21px;
+        @include line-height(21);
       }
     }
     ul {

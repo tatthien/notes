@@ -1,8 +1,10 @@
 <template>
-    <nav id="switch-type" class="site-main__switcher">
-        <router-link :to="{ name: 'home' }" exact>Notes</router-link>
-        <router-link :to="{ name: 'til' }" exact class="til">#TIL</router-link>
+  <div class="type-switcher">
+    <nav>
+      <router-link :to="{ name: 'home' }" exact>Notes</router-link>
+      <router-link :to="{ name: 'til' }" exact class="til">TIL</router-link>
     </nav><!-- end #switch-type -->
+  </div>
 </template>
 
 <script>
@@ -22,24 +24,28 @@
 </script>
 
 <style lang="scss" scoped>
-    #switch-type {
-        margin-bottom: 40px;
-        a {
-            font-weight: 700;
-            color: $color--dark;
-            padding: 5px 0;
-            margin-right: 10px;
-            display: inline-block;
-            &:hover {
-                color: $color--primary-hover;
-            }
-            &.router-link-active {
-                cursor: default;
-                border-bottom: 2px solid $color--primary;
-            }
-        }
-        @media (max-width: 414px) {
-            margin-bottom: 20px;
-        }
+  .type-switcher {
+    @media screen and (min-width: 991px){
+      position: absolute;
+      left: -110px;
+      top: 53px;
+      nav {
+        position: fixed;
+        transform: rotate(90deg) translate3d(0,0,0);
+      }
     }
+    a {
+      color: rgba($color--dark, .4);
+      padding: 5px 0;
+      margin-right: 15px;
+      display: inline-block;
+      font-weight: 600;
+      &:hover {
+          color: $color--primary-hover;
+      }
+      &.router-link-active {
+          color: $color--primary-hover;
+      }
+    }
+  }
 </style>

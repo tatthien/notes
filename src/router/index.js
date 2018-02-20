@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 const Home = () => import(/* webpackChunkName: "home" */ '@/components/pages/Home')
-const SingleTil = () => import(/* webpackChunkName: "til" */ '@/components/pages/SingleTil')
+const Til = () => import(/* webpackChunkName: "til" */ '@/components/pages/Til')
 const SinglePost = () => import(/* webpackChunkName: "post" */ '@/components/pages/SinglePost')
 
 Vue.use(Router)
@@ -24,7 +24,7 @@ export default new Router({
     {
       path: '/til',
       name: 'til',
-      component: SingleTil
+      component: Til
     },
     {
       path: '/post/:id',

@@ -1,6 +1,6 @@
 {
-  "name": "my-blog",
-  "short_name": "my-blog",
+  "name": "Thien's notes",
+  "short_name": "Thien's notes",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",

@@ -8,7 +8,7 @@
             <div id="submenu" class="site-header__submenu">
                 <nav class="menu" role="navigation">
                     <a href="https://github.com/tatthien" target="_blank">#github</a>
-                    <a href="https://twitter.com/tat_thien" target="_blank">@tat_thien</a>
+                    <a href="https://twitter.com/tat_thien" target="_blank">#twitter</a>
                 </nav>
             </div><!-- #sub-menu -->
         </div>
@@ -41,15 +41,15 @@
                 &:before {
                     content: 'T';
                     background: $color--primary;
-                    font-weight: 700;
-                    padding: 0 5px;
+                    font-weight: 600;
+                    padding: 0 7px;
                 }
             }
         }
         &__submenu {
             a {
-               
-                font-weight: 700;
+
+                font-weight: 600;
                 display: inline-block;
                 margin-left: 15px;
                 color: $color--primary;

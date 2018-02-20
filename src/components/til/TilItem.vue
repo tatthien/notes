@@ -1,10 +1,12 @@
 <template>
+  <transition name="item-slide-r-l">
     <article class="til post">
-        <h2 class="entry-title">
-            <time>{{ til.fields.publishDate | formatDate }}</time>
-        </h2>
-        <div class="entry-content" v-html="tilContent"></div>
+      <h2 class="entry-title">
+        <time>{{ til.fields.publishDate | formatDate }}</time>
+      </h2>
+      <div class="entry-content" v-html="tilContent"></div>
     </article>
+  </transition>
 </template>
 
 <script>
@@ -20,9 +22,9 @@
 </script>
 
 <style lang="scss" scoped>
-    .til {
-        .entry-content {
-            margin-top: 20px;
-        }
+  .til {
+    .entry-content {
+      margin-top: 10px;
     }
+  }
 </style>
