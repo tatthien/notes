@@ -1,25 +1,28 @@
 <template>
   <div id="app" class="site grid">
-    <the-header></the-header>
+    <site-header></site-header>
       <main id="main" class="site-main" role="main">
+        <type-switcher></type-switcher>
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
       </main><!-- .site-main -->
-    <the-footer></the-footer>
+    <site-footer></site-footer>
   </div>
 </template>
 
 <script>
 import NProgress from 'nprogress'
 import bus from './utils/event-bus'
-import TheHeader from '@/components/shared/TheHeader.vue'
-import TheFooter from '@/components/shared/TheFooter.vue'
+import SiteHeader from '@/components/shared/SiteHeader.vue'
+import SiteFooter from '@/components/shared/SiteFooter.vue'
+import TypeSwitcher from '@/components/TypeSwitcher.vue'
 export default {
   name: 'app',
   components: {
-    TheHeader,
-    TheFooter
+    SiteHeader,
+    SiteFooter,
+    TypeSwitcher
   },
   created () {
     bus.$on('start_loading', function () {

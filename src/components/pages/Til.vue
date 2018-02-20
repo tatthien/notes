@@ -1,16 +1,15 @@
 <template>
+  <transition name="slide-r-l">
     <div class="til">
-        <type-switcher></type-switcher>
-        <til-list></til-list>
+      <til-list></til-list>
     </div>
+  </transition>
 </template>
 
 <script>
-  import TypeSwitcher from '@/components/TypeSwitcher.vue'
   import TilList from '@/components/til/TilList.vue'
   export default {
     components: {
-      TypeSwitcher,
       TilList
     }
   }

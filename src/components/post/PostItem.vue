@@ -1,5 +1,5 @@
 <template>
-    <transition name="slideup">
+    <transition name="item-slide-r-l">
         <article class="post" v-if="post">
             <h2 class="entry-title">
                 <router-link :to="{ name: 'post', params: { id: post.sys.id }}" v-text="post.fields.title"></router-link>
@@ -17,14 +17,3 @@
     props: ['post']
   }
 </script>
-
-<style lang="scss" scoped>
-    .slideup-enter-active {
-        transition: all .5s ease;
-    }
-
-    .slideup-enter {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-</style>

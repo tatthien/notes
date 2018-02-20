@@ -1,18 +1,16 @@
 <template>
-    <div class="home">
-        <type-switcher></type-switcher>
+    <transition name="slide-r-l">
+      <div class="home">
         <post-list></post-list>
-    </div>
+      </div>
+    </transition>
 </template>
 
 <script>
-  import TypeSwitcher from '@/components/TypeSwitcher.vue'
   import PostList from '@/components/post/PostList.vue'
   export default {
     components: {
-      TypeSwitcher,
       PostList
     }
   }
 </script>
-

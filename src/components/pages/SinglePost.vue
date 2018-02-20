@@ -1,31 +1,31 @@
 <template>
-    <transition name="fade">
+  <transition name="slide-r-l">
     <div class="single" v-if="this.post">
-        <article class="post">
-            <header class="entry-header">
-                <h1 class="entry-title" v-text="post.fields.title"></h1>
-            </header>
+      <article class="post">
+        <header class="entry-header">
+          <h1 class="entry-title" v-text="post.fields.title"></h1>
+        </header>
 
-            <div class="entry-meta">
-                <time>{{ post.fields.publishDate | formatDate }}</time>
-            </div>
+        <div class="entry-meta">
+          <time>{{ post.fields.publishDate | formatDate }}</time>
+        </div>
 
-            <div class="entry-content" v-html="markedBody"></div>
+        <div class="entry-content" v-html="markedBody"></div>
 
-            <div class="entry-comment">
-                <h2>Comments</h2>
-                <vue-disqus shortname="blogtatthien" :identifier="this.id" :url="this.url"></vue-disqus>
-            </div>
-        </article>
+        <div class="entry-comment">
+          <h2>Comments</h2>
+          <vue-disqus shortname="blogtatthien" :identifier="this.id" :url="this.url"></vue-disqus>
+        </div>
+      </article>
     </div>
-    </transition>
+  </transition>
 </template>
 
 <script>
   import marked, { Renderer } from 'marked'
   import highlightjs from 'highlight.js'
   import VueDisqus from 'vue-disqus/VueDisqus.vue'
-  
+
   const renderer = new Renderer()
   renderer.code = (code, language) => {
     // Check whether the given language is valid for highlight.js.
@@ -83,18 +83,11 @@
 </script>
 
 <style lang="scss" scoped>
-    .entry-comment {
-        margin-top: 50px;
-        h2 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
+  .entry-comment {
+    margin-top: 50px;
+    h2 {
+      font-size: 1.5em;
+      font-weight: 700;
     }
-    /* Transition */
-    .fade-enter-active, .fade-leave-active {
-        transition: opacity .2s ease-in-out;
-    }
-    .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-        opacity: 0
-    }
+  }
 </style>
