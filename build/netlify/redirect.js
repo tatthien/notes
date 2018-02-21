@@ -4,9 +4,9 @@
 const fs = require('fs')
 const path = require('path')
 
-var redirectContent = '/*    /index.html   200'
+let redirectContent = '/*    /index.html   200'
 
-var filePath = path.resolve(__dirname, '../../dist/_redirects')
+let filePath = path.resolve(__dirname, '../../dist/_redirects')
 
 fs.writeFile(filePath, redirectContent, (err) => {
   if (err) throw err;
