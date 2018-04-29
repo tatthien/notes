@@ -17,7 +17,7 @@
     data () {
       return {
         isLoadMore: false,
-        limit: 10,
+        limit: 40,
         skip: 0
       }
     },

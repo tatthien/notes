@@ -1,8 +1,7 @@
 .post {
   padding: 10px 0;
-  border-bottom: 1px solid #efefef;
   .entry-title {
-    font-size: 2em;
+    font-size: 18px;
     font-weight: 700;
   }
   .entry-title a {
@@ -13,16 +12,14 @@
     }
   }
   .entry-meta {
-    font-size: 14px;
     color: $color--grey;
-    font-weight: 700;
   }
   .entry-content {
     line-height: 2em;
     p {
       margin: 1em 0;
-      font-size: 21px;
-      @include line-height(21);
+      font-size: 16px;
+      @include line-height(16);
     }
     h1,
     h2,
@@ -53,8 +50,8 @@
     pre {
       overflow-x: auto;
       padding: 10px;
-      font-size: 21px;
-      @include line-height(21);
+      font-size: 16px;
+      @include line-height(16);
       background-color: $color--dark;
       code {
         background-color: transparent;
@@ -70,8 +67,8 @@
     ol {
       padding-left: 20px;
       li {
-        font-size: 21px;
-        @include line-height(21);
+        font-size: 16px;
+        @include line-height(16);
       }
     }
     ul {

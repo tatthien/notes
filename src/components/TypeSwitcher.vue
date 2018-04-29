@@ -28,7 +28,7 @@
     @media screen and (min-width: 991px){
       position: absolute;
       left: -110px;
-      top: 53px;
+      top: 100px;
       nav {
         position: fixed;
         transform: rotate(90deg) translate3d(0,0,0);

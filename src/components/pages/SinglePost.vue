@@ -12,10 +12,7 @@
 
         <div class="entry-content" v-html="markedBody"></div>
 
-        <div class="entry-comment">
-          <h2>Comments</h2>
-          <vue-disqus shortname="blogtatthien" :identifier="this.id" :url="this.url"></vue-disqus>
-        </div>
+        <div class="comment-ps">Hiện tại tính năng bình luận chưa có. Nếu bạn <strong>"quá mong muốn"</strong> phản hồi bài viết này, hãy liên hệ trực tiếp với tôi.</div>
       </article>
     </div>
   </transition>
@@ -24,7 +21,6 @@
 <script>
   import marked, { Renderer } from 'marked'
   import highlightjs from 'highlight.js'
-  import VueDisqus from 'vue-disqus/VueDisqus.vue'
 
   const renderer = new Renderer()
   renderer.code = (code, language) => {
@@ -48,9 +44,6 @@
   })
 
   export default {
-    components: {
-      VueDisqus
-    },
     data () {
       return {}
     },
@@ -83,10 +76,13 @@
 </script>
 
 <style lang="scss" scoped>
-  .entry-comment {
-    margin-top: 50px;
-    h2 {
-      font-size: 1.5em;
+  .comment-ps {
+    font-family: 'Cousine', monospace;
+    font-size: 14px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #efefef;
+    strong {
       font-weight: 700;
     }
   }

@@ -28,7 +28,7 @@
         top: 0;
         left: 0;
         right: 0;
-        font-size: 18px;
+        font-size: 16px;
         z-index: 99;
         .inner {
             display: flex;
@@ -41,8 +41,12 @@
                 &:before {
                     content: 'T';
                     background: $color--primary;
-                    font-weight: 600;
-                    padding: 0 7px;
+                    font-weight: 700;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
         }
