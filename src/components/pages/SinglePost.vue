@@ -12,7 +12,7 @@
 
         <div class="entry-content" v-html="markedBody"></div>
 
-        <div class="comment-ps">Hiện tại tính năng bình luận chưa có. Nếu bạn <strong>"quá mong muốn"</strong> phản hồi bài viết này, hãy liên hệ trực tiếp với tôi.</div>
+        <div class="comment-ps">Nếu bạn <strong>"muốn"</strong> phản hồi bài viết này, hãy liên hệ trực tiếp với tôi.</div>
       </article>
     </div>
   </transition>
