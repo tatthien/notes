@@ -12,7 +12,7 @@
 
         <div class="entry-content" v-html="markedBody"></div>
 
-        <div class="comment-ps">Nếu bạn <strong>"muốn"</strong> phản hồi bài viết này, hãy liên hệ trực tiếp với tôi.</div>
+        <div class="comment-ps">Tính năng bình luận đang được xây dựng.</div>
       </article>
     </div>
   </transition>
